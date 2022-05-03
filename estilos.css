@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+.contenedorInicio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+        "header header header"
+        "contenedorPadre contenedorPadre contenedorPadre"
+        "contenedorMenu contenedorMenu contenedorMenu"
+        "bannerSecundario bannerSecundario bannerSecundario"
+        "fotosInicio1 fotosInicio2 fotosInicio3"
+        "presentacionInicio presentacionInicio presentacionInicio"
+        "footer footer footer";
+ }
+
+.header {
+    grid-area: header;
+}
+
+.contenedorPadre {
+    grid-area: contenedorPadre;
+
+}
+
+.contenedorMenu {
+    grid-area: contenedorMenu;
+}
+
+.bannerSecundario {
+    grid-area: bannerSecundario;
+}
+
+.fotosInicio1 {
+    grid-area: fotosInicio1;
+}
+
+.fotosInicio2 {
+    grid-area: fotosInicio2;
+
+}
+
+.fotosInicio3 {
+    grid-area: fotosInicio3;
+}
+
+.presentacionInicio {
+    grid-area: presentacionInicio;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+.contenedorBikinis {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+        "header header header"
+        "contenedorPadre contenedorPadre contenedorPadre"
+        "contenedorMenu contenedorMenu contenedorMenu"
+        "bikini1 bikini2 bikini3"
+        "bikini4 bikini5 bikini6"
+        "bikini7 bikini8 bikini9"
+        "footer footer footer";
+}
+
+.bikini1 {
+    grid-area: bikini1;
+}
+
+.bikini2 {
+    grid-area: bikini2;
+}
+
+.bikini3 {
+    grid-area: bikini3;
+}
+
+.bikini4 {
+    grid-area: bikini4;
+}
+
+.bikini5 {
+    grid-area: bikini5;
+}
+
+.bikini6 {
+    grid-area: bikini6;
+}
+
+.bikini7 {
+    grid-area: bikini7;
+}
+
+.bikini8 {
+    grid-area: bikini8;
+}
+
+.bikini9 {
+    grid-area: bikini9;
+}
+
+.galeria {
+    width: 400px;
+    height: 350px;
+}
+
+.bikini1,
+.bikini2,
+.bikini3,
+.bikini4,
+.bikini5,
+.bikini6,
+.bikini7,
+.bikini8,
+.bikini9 {
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+.contenedorDondeEstamos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "header header"
+        "contenedorPadre contenedorPadre"
+        "contenedorMenu contenedorMenu"
+        "contenedorLocacion1 ContenedorLocacion2"
+        "footer footer ";
+}
+
+.locacion1 {
+    grid-area: contenedorLocacion1;
+}
+
+.locacion2 {
+    grid-area: contenedorLocacion2;
+}
+
+/*header*/
+.contenedorBanner {
+    background-color: black;
+    color: white;
+    height: auto;
+}
+
+.enlaceig {
+    text-align: center;
+}
+
+.enlaceig a {
+    text-decoration: none;
+    color: white;
+}
+
+.enlaceig:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.mail {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedorPadre {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.logo {
+    margin: 10px;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.titulo {
+    color: black;
+    letter-spacing: 10px;
+    font-size: 00px;
+}
+
+.contenedorTitulo {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Lora', serif;
+}
+
+/* Menu*/
+.contenedorMenu {
+    background-color: black;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    padding: 20px;
+    display: flex;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: grey;
+    color: black;
+    font-weight: bold;
+    border-radius: 15%;
+}
+
+.bannerSecundario {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+}
+
+.fotosInicio1,
+.fotosInicio2,
+.fotosInicio3 {
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.dibujo {
+    width: 400px;
+    height: 400px;
+
+}
+
+.presentacionInicio {
+    border: solid black;
+    margin: 10px 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.logowp {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    transition: all 1s;
+}
+
+.logowp:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.logoig {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 80px;
+    right: 5px;
+    transition: all 1s;
+}
+
+.logoig:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.tarjetas {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+h3 {
+    color: white;
+}
+
+/*dondeestamos*/
+.contenedorLocacion1,
+.contenedorLocacion2 {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenLocacion {
+    width: 70%;
+}
+
+.textolocacion {
+    width: 70%;
+    border: 3px solid black;
+    text-align: center;
+}
+
+/*mediaquerries para celular*/
+@media (max-width: 576px) {
+    .contenedorInicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "bannerSecundario"
+            "fotosInicio1"
+            "fotosInicio2"
+            "fotosInicio3"
+            "presentacionInicio"
+            "footer";
+    }
+
+    .contenedorBikinis {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "bikini1"
+            "bikini2"
+            "bikini3"
+            "bikini4"
+            "bikini5"
+            "bikini6"
+            "bikini7"
+            "bikini8"
+            "bikini9"
+            "footer";
+    }
+}
+
+/*mediaquerries para tablets and desktop*/
+@media screen and (min-width:576px) and (max-width:992px) {
+    .contenedorInicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "header"
+            "contenedorPadre"
+            "contenedorMenu"
+            "bannerSecundario"
+            "fotosInicio1"
+            "fotosInicio2"
+            "fotosInicio3"
+            "presentacionInicio"
+            "footer";
+    }
+
+    .contenedorBikinis {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, auto);
+        grid-template-areas:
+            "header header"
+            "contenedorPadre contenedorPadre"
+            "contenedorMenu contenedorMenu"
+            "bikini1 bikini2"
+            "bikini3 bikini4"
+            "bikini5 bikini6"
+            "bikini7 bikini8"
+            "bikini9 bikini9"
+            "footer footer";
+    }
+}
